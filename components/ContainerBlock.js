@@ -8,12 +8,13 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Manu Arora - Developer, Writer, Creator and YouTuber",
-    description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
-    image: "/avatar.png",
+    title: "Luca Van Genechten - Developer, Leader, Student",
+    description: `Just a student who loves to code!`,
+    image: "/avatar.jpg",
     type: "website",
     ...customMeta,
   };
+  // TODO: replace URL's
   return (
     <div>
       <Head>
