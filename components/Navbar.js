@@ -15,17 +15,24 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-10">
       <div className="flex  md:flex-row justify-between items-center">
-        <div className="flex flex-col">
-          <Link href="/">
-            <h1 className="font-semibold text-xl dark:text-gray-100">
-              {userData.name}
-            </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300">
-              {userData.designation}
-            </p>
-          </Link>
+        <div className="flex md:flex-column justify-evenly">
+          <img
+            src="/logoportfolio.png"
+            alt=""
+            className="w-10 h-10 object-fit mr-5 mt-1"
+          ></img>
+          <div className="flex flex-col">
+            <Link href="/">
+              <h1 className="font-semibold text-xl dark:text-gray-100">
+                {userData.name}
+              </h1>
+              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+                {userData.designation}
+              </p>
+            </Link>
+          </div>
         </div>
 
         <div className="space-x-8 hidden md:block">
