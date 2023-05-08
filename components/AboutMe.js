@@ -122,7 +122,7 @@ export default function AboutMe() {
             {userData.about.description?.map((desc, idx) => (
               <p
                 key={idx}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+                className="text-xl mb-4 text-gray-700 dark:text-gray-300"
               >
                 {desc}
               </p>

@@ -12,7 +12,7 @@ export const Card = ({ title, link, imgUrl, description }) => {
             </p>
           </div>
         </div>
-        <h1 className="absolute top-2 left-2 z-10 text-white font-bold px-3 py-1 bg-red-500 rounded-md">
+        <h1 className="absolute top-2 left-2 z-10 text-white font-bold px-3 py-1 bg-blue-500 rounded-md">
           {title}
         </h1>
       </div>
