@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import { Grid } from "@components/ProjectGrid";
+import { Grid } from "./ProjectGrid";
 
 export default function Projects() {
   return (
@@ -12,7 +12,7 @@ export default function Projects() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="max-w-6xl mx-auto pt-6">
-          <Grid data={userData.projects}></Grid>
+          <Grid data={userData.projects} filterEnabled={true}></Grid>
         </div>
       </div>
     </section>

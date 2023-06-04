@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
-import ProjectModal from "@components/ProjectModal";
+import ProjectModal from "./ProjectModal";
 
 export const Card = (project) => {
   const [open, setOpen] = useState(false);

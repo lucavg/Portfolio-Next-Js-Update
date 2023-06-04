@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Grid } from "./ProjectGrid";
+import { Grid } from "./Projects/ProjectGrid";
 import userData from "@constants/data";
 
 export default function FavouriteProjects() {
@@ -33,7 +33,7 @@ export default function FavouriteProjects() {
             <p>View all</p>
           </Link>
         </header>
-        <Grid data={userData.favouriteProjectData}></Grid>
+        <Grid data={userData.favouriteProjectData} filterEnabled={false}></Grid>
       </div>
     </div>
   );

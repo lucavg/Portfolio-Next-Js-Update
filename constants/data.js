@@ -22,7 +22,7 @@ const userData = {
       company: "icapps Antwerp",
       year: "Februari 2023 - May 2023",
       companyLink: "https://icapps.com/",
-      desc: "During my 13-week internship at <b>icapps</b>, I worked as a <b>Flutter Developer</b> on the 'Tour de icapps' project, focusing on <b>Flutter for Web</b> development. I worked on this project as a Flutter developer to design and implement features, optimize performance, and ensure a seamless user experience. It was a valuable opportunity to refine my <b>Flutter</b> skills and gain hands-on experience in cross-platform app development.",
+      desc: 'During my 13-week internship at <b>icapps</b>, I worked as a <b>Flutter Developer</b> on the "Tour de icapps" project, focusing on <b>Flutter for Web</b> development. I worked on this project as a Flutter developer to design and implement features, optimize performance, and ensure a seamless user experience. It was a valuable opportunity to refine my <b>Flutter</b> skills and gain hands-on experience in cross-platform app development.',
     },
     {
       title: "IT Services & SAP",
@@ -111,6 +111,7 @@ const userData = {
         "Full Stack Development",
       ],
       githubLink: "https://github.com/lucavg/flutter-beer-app",
+      shortDescription: "A sporty app for a sporty company",
       description:
         "As part of my internship, I received a special onboarding at icapps. In order to train myself for the upcoming weeks, I was given a starter project to learn all the ins and outs of Flutter. This project is the result of just 3 weeks of work, allowing me to create a fully fledged beer database where I can store my favorite beers and give them a rating.",
     },
