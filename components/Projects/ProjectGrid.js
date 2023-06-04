@@ -8,6 +8,7 @@ export const Grid = ({ data, filterEnabled }) => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [availableTags, setAvailableTags] = useState([]);
   const [filterKey, setFilterKey] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const tags = Array.from(new Set(data.flatMap((item) => item.tags))).sort();
@@ -19,16 +20,30 @@ export const Grid = ({ data, filterEnabled }) => {
     setFilterKey((prevKey) => prevKey + 1);
   };
 
-  const filterItems = (items, selectedTags) => {
-    if (selectedTags.length === 0) {
-      return items;
-    }
-    return items.filter((item) =>
-      item.tags.some((tag) => selectedTags.includes(tag))
-    );
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
-  const filteredData = filterItems(data, selectedTags);
+  const filterItems = (items, selectedTags, searchQuery) => {
+    let filteredItems = items;
+
+    if (selectedTags.length > 0) {
+      filteredItems = filteredItems.filter((item) =>
+        item.tags.some((tag) => selectedTags.includes(tag))
+      );
+    }
+
+    if (searchQuery.trim() !== "") {
+      const searchQueryLC = searchQuery.toLowerCase();
+      filteredItems = filteredItems.filter((item) =>
+        item.title.toLowerCase().includes(searchQueryLC)
+      );
+    }
+
+    return filteredItems;
+  };
+
+  const filteredData = filterItems(data, selectedTags, searchQuery);
 
   const tagOptions = availableTags.map((tag) => ({
     value: tag,
@@ -38,7 +53,14 @@ export const Grid = ({ data, filterEnabled }) => {
   return (
     <div>
       {filterEnabled && (
-        <div className="flex justify-center my-4 z-10">
+        <div className="flex flex-col justify-evenly md:flex-row my-4 z-10">
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="px-4 py-1 bg-[#F1F1F1] dark:bg-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 my-4"
+          />
           <Select
             isMulti
             isSearchable
@@ -52,19 +74,23 @@ export const Grid = ({ data, filterEnabled }) => {
             styles={{
               control: (provided, state) => ({
                 ...provided,
-                border: "1px solid #E2E8F0",
+                border: "1px solid border-gray-300",
                 borderRadius: "0.375rem",
                 boxShadow: state.isFocused
                   ? "0 0 0 3px rgba(66, 153, 225, 0.5)"
                   : "none",
                 "&:hover": {
-                  border: "1px solid #A0AEC0",
+                  border: "1px solid border-gray-300",
                 },
+                backgroundColor: "#F1F1F1 dark:bg-gray-700",
+                width: "15rem",
+                margin: "1rem",
               }),
               menu: (provided) => ({
                 ...provided,
                 borderRadius: "0.375rem",
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+                marginTop: "-0.5rem",
               }),
               option: (provided, state) => ({
                 ...provided,
