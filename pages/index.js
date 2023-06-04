@@ -1,4 +1,4 @@
-import CV from "components/CV";
+import Resume from "components/Resume";
 import ContainerBlock from "../components/ContainerBlock";
 import FavouriteProjects from "../components/FavouriteProjects";
 import Hero from "../components/Hero";
@@ -10,7 +10,7 @@ export default function Home({}) {
       description="Just a student who loves to code!"
     >
       <Hero />
-      <CV />
+      <Resume />
       <FavouriteProjects />
     </ContainerBlock>
   );

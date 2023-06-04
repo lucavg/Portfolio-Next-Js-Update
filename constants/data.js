@@ -172,6 +172,37 @@ const userData = {
         "An analysis and design report made for the course Requirements Analysis in cooperation with Miel Goossens, Jari Van de Vel, Senne Van Reusel, Yentl Hendrickx and Marije Verstrepen. The report details how to create an application for an alumni night. This task really taught me how to work efficiently in a group as well as how to divide a workload.",
     },
   ],
+  internshipDescription: [
+    'During my 13-week internship at <b>icapps</b>, I had the opportunity to work as a <b>Flutter Developer</b> on the "<b>Tour de icapps</b>" project, which focused on developing a <b>Flutter for Web</b> application. The Tour de icapps was a <b>competition</b> organized to run parallel to the <b>Tour de France</b>, consisting of multiple <b>stages</b> with <b>challenges</b> for participating teams.',
+    "As the sole developer assigned to the project, I took on the responsibility of creating the Tour de icapps application from start to finish. Throughout the internship, I received valuable guidance and support from my team members, who provided me with insights and expertise to ensure the success of the project. My role involved leveraging my proficiency in <b>Flutter</b> to implement a dynamic and engaging user interface for the Tour de icapps application.",
+    "During the development process, I encountered various <b>challenges</b> that required <b>problem-solving</b> skills and adaptability. I successfully addressed these challenges by collaborating with my team, conducting research, and applying industry best practices to optimize the application's performance.",
+    "Working on the Tour de icapps project allowed me to enhance my expertise in <b>Flutter for Web</b> development and gain hands-on experience in working independently on a significant project. It strengthened my ability to <b>manage</b> timelines, <b>prioritize</b> tasks, and deliver <b>high-quality</b> results within a dynamic environment.",
+    "In the following documents, you can find the result of this wonderful journey, as well as the process I went through to get there and my view on the journey.",
+  ],
+  fadeImages: [
+    {
+      url: "/screenshots/home.png",
+      caption: "Home Page",
+    },
+    {
+      url: "/screenshots/authorization.png",
+      caption: "Authorization Page",
+    },
+    {
+      url: "/screenshots/team_select.png",
+      caption: "Team Select Page",
+    },
+    {
+      url: "/screenshots/tournament.png",
+      caption: "Tournament Page",
+    },
+  ],
+  documentationLinks: {
+    planOfApproach: "",
+    realizationReport: "",
+    reflectionReport: "",
+    weekReports: "",
+  },
 };
 
 export default userData;

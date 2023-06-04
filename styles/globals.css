@@ -20,6 +20,11 @@ a {
   box-sizing: border-box;
 }
 
+.react-responsive-modal-overlay,
+.react-responsive-modal-container,
+.react-responsive-modal-modal {
+  animation-fill-mode: forwards !important;
+}
 @keyframes customEnterOverlayAnimation {
   0% {
     transform: scale(0);
