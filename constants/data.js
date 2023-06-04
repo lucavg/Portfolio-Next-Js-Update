@@ -198,7 +198,7 @@ const userData = {
     },
   ],
   documentationLinks: {
-    planOfApproach: "",
+    planOfApproach: "/3APPAI01_plan_of_approach_Luca_Van_Genechten_final.pdf",
     realizationReport: "",
     reflectionReport: "",
     weekReports: "",
