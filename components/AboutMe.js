@@ -18,7 +18,7 @@ export default function AboutMe() {
             {userData.about.title} Currently working on:
             <br />{" "}
             <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
+              className="bg-blue-500 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
               {userData.about.currentProject} 🚲
@@ -57,7 +57,7 @@ export default function AboutMe() {
                   target="__blank"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  CV
+                  resume
                 </a>{" "}
                 and I'd love to have a chat with you.
               </p>
@@ -128,7 +128,7 @@ export default function AboutMe() {
               </p>
             ))}
 
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+            <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">

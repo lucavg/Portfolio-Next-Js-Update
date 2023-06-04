@@ -1,4 +1,4 @@
-import CV from "@components/CV";
+import CV from "components/CV";
 import ContainerBlock from "../components/ContainerBlock";
 import FavouriteProjects from "../components/FavouriteProjects";
 import Hero from "../components/Hero";

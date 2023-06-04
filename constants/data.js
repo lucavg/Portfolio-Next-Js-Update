@@ -7,16 +7,23 @@ const userData = {
   phone: "+32 471016602",
   address: "Vorselaar, Antwerp, Belgium.",
   about: {
-    title: "Just a student who loves to code!",
+    title: "Just a developer who loves to code!",
     description: [
       `Hi! My name is Luca Van Genechten, a student in Application Development at Thomas More Geel. I previously studied 2 years at Karel de Grote University College in Antwerpen, but I later made the switch to Thomas More, where I am currently in my final year.`,
-      `My favorite subject in IT is application development, specifically using React Native or Flutter. My knowledge of the IT spectrum is quite wide, but my passion lies in mobile development.`,
+      `My favorite subject in IT is application development, specifically using Flutter. My knowledge of the IT spectrum is quite wide, but my passion lies in mobile development, though I still learn on a daily basis and intend to keep doing so.`,
       `My hobbies are programming, Dungeons & Dragons, padel, and I often go swimming as well.`,
     ],
     currentProject: "Tour de icapps",
     currentProjectUrl: "https://flutter-tour-d-icapps.web.app/",
   },
   experience: [
+    {
+      title: "Internship Flutter Developer",
+      company: "icapps Antwerp",
+      year: "Februari 2023 - May 2023",
+      companyLink: "https://icapps.com/",
+      desc: "During my 13-week internship at <b>icapps</b>, I worked as a <b>Flutter Developer</b> on the 'Tour de icapps' project, focusing on <b>Flutter for Web</b> development. I worked on this project as a Flutter developer to design and implement features, optimize performance, and ensure a seamless user experience. It was a valuable opportunity to refine my <b>Flutter</b> skills and gain hands-on experience in cross-platform app development.",
+    },
     {
       title: "IT Services & SAP",
       company: "Hout Luyten Morkhoven",
@@ -52,81 +59,114 @@ const userData = {
   favouriteProjectData: [
     {
       title: "CAD-Dieren",
-      link: "https://github.com/lucavg/CAD-Dieren",
       imgUrl: "/CAD.png",
+      tags: ["Angular", "Nest JS", "TypeScript", "Web Development"],
+      githubLink: "https://github.com/lucavg/CAD-Dieren",
       description:
         "CAD is a beautiful one-woman animal protection service. Their website is in dire need of a rebranding and I have been tasked to provide this much-needed makeover. Using the power of Angular and Nest JS, this work-in-progress project has now been give a new life.",
     },
     {
       title: "Flutter Beer App",
-      link: "https://github.com/lucavg/flutter-beer-app",
       imgUrl: "/icapps.png",
+      tags: [
+        "Flutter",
+        "Dart",
+        "Flutter for Web",
+        "Firebase",
+        "Mobile Development",
+        "Full Stack Development",
+      ],
+      githubLink: "https://github.com/lucavg/flutter-beer-app",
       description:
         "As part of my internship, I received a special onboarding at icapps. In order to train myself for the upcoming weeks, I was given a starter project to learn all the ins and outs of Flutter. This project is the result of just 3 weeks of work, allowing me to create a fully fledged beer database where I can store my favorite beers and give them a rating.",
     },
     {
       title: "Conway's Game of Life",
-      link: "https://github.com/lucavg/Game_of_Life",
       imgUrl: "/game_of_life_glider.gif",
+      tags: ["Java", "JavaFX", "Java Swing", "Java AWT", "Other"],
+      githubLink: "https://github.com/lucavg/Game_of_Life",
       description:
         "In cooperation with Kai Everaerts, a fellow student at Karel de Grote college in Antwerp, I created an application based on Conway's Game of Life. It is fully written using Java and recreates a fully fledged living colony of pixels.",
     },
   ],
-  // TODO: change projects
   projects: [
     {
       title: "CAD-Dieren",
-      link: "https://github.com/lucavg/CAD-Dieren",
       imgUrl: "/CAD.png",
+      tags: ["Angular", "Nest JS", "MongoDB", "TypeScript", "Web Development"],
+      fileLink: "/CAD-Dieren.pdf",
+      githubLink: "https://github.com/lucavg/CAD-Dieren",
       description:
         "CAD is a beautiful one-woman animal protection service. Their website is in dire need of a rebranding and I have been tasked to provide this much-needed makeover. Using the power of Angular and Nest JS, this work-in-progress project has now been give a new life.",
     },
     {
       title: "Flutter Beer App",
-      link: "https://github.com/lucavg/flutter-beer-app",
       imgUrl: "/icapps.png",
+      tags: [
+        "Flutter",
+        "Dart",
+        "Flutter for Web",
+        "Firebase",
+        "Mobile Development",
+        "Full Stack Development",
+      ],
+      githubLink: "https://github.com/lucavg/flutter-beer-app",
       description:
         "As part of my internship, I received a special onboarding at icapps. In order to train myself for the upcoming weeks, I was given a starter project to learn all the ins and outs of Flutter. This project is the result of just 3 weeks of work, allowing me to create a fully fledged beer database where I can store my favorite beers and give them a rating.",
     },
     {
       title: "Conway's Game of Life",
-      link: "https://github.com/lucavg/Game_of_Life",
       imgUrl: "/game_of_life_glider.gif",
+      tags: ["Java", "JavaFX", "Java Swing", "Java AWT", "Other"],
+      githubLink: "https://github.com/lucavg/Game_of_Life",
       description:
         "In cooperation with Kai Everaerts, a fellow student at Karel de Grote college in Antwerp, I created an application based on Conway's Game of Life. It is fully written using Java and recreates a fully fledged living colony of pixels.",
     },
     {
       title: "DevOps Case Study",
-      link: "https://github.com/lucavg/DevOpsCaseStudy",
       imgUrl: "/selenium.png",
+      tags: ["Java", "Selenium", "JUnit", "Dev Ops", "Other"],
+      githubLink: "https://github.com/lucavg/DevOpsCaseStudy",
       description:
         "A case study developed for the course DevOps at Thomas More Geel. This project has the functionality to search subjects on sites like Youtube and write those results to a file using Selenium. This project provided me with knowledge about Selenium, which I previously had no experience with.",
     },
     {
       title: "Portfolio Application",
-      link: "https://github.com/lucavg/My-Portfolio",
       imgUrl: "/logoportfolio.png",
+      tags: [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Vercel",
+        "Web Development",
+        "Full Stack Development",
+      ],
+      githubLink: "https://github.com/lucavg/My-Portfolio",
       description:
         "A portfolio application developed for the course Professional Skills at Thomas More Geel. This is meant to be a digital version of a CV, fully programmed in Java using Android Studio. My goal for this project was to showcase my skills at programming Android applications, as well as improving my knowledge about Android Studio and Flutter.",
     },
     {
       title: "Cordova Application",
-      link: "https://github.com/itfactory-tm/2021_2022_2appai_cordova-lucavg",
       imgUrl: "/chiro.png",
+      tags: ["Cordova", "JavaScript", "HTML", "CSS", "Mobile Development"],
+      githubLink:
+        "https://github.com/itfactory-tm/2021_2022_2appai_cordova-lucavg",
       description:
         "This Cordova application was developed for the course Cordova at Thomas More Geel. The application is meant for the administrators of Chiro Vorselaar, who can use the app to connect to an online database on our website to mark off members as present, as well as look up their personal data. A personal passion project I am still developing to this date, while learning a great amount about Cordova.",
     },
     {
       title: "PHP Project",
-      link: "https://github.com/itfactory-tm/2022-ProjectPHP-302",
       imgUrl: "/php_project.png",
+      tags: ["PHP", "Laravel", "MySQL", "HTML", "CSS", "Web Development"],
+      githubLink: "https://github.com/itfactory-tm/2022-ProjectPHP-302",
       description:
         "A consulting bureau application made with Laravel and PHP, developed in cooperation with Rikko Keuppens, Matthias Verstappen, Bram Augenbroe, Britt De Keyser and Zion Van Der Weehe. This project provided me with a great sense of what it's like to work in group, as well as working with a client. (currently, this repository is set to private)",
     },
     {
       title: "Requirements Analysis",
-      link: "/Analyse-en-ontwerprapport%20volledig_sjabloon.docx",
       imgUrl: "/UML.png",
+      tags: ["UML", "Requirements Analysis", "Design Report", "Other"],
+      fileLink: "/Analyse-en-ontwerprapport%20volledig_sjabloon.docx",
       description:
         "An analysis and design report made for the course Requirements Analysis in cooperation with Miel Goossens, Jari Van de Vel, Senne Van Reusel, Yentl Hendrickx and Marije Verstrepen. The report details how to create an application for an alumni night. This task really taught me how to work efficiently in a group as well as how to divide a workload.",
     },

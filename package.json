@@ -14,7 +14,10 @@
     "next-themes": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-rough-notation": "^1.0.3"
+    "react-icons": "^4.9.0",
+    "react-responsive-modal": "^6.4.1",
+    "react-rough-notation": "^1.0.3",
+    "react-select": "^5.7.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",

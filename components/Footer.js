@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="space-x-4 flex flex-row items-center">
             <a
               href={userData.socialLinks.github}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export default function Footer() {
             </a>
             <a
               href={userData.socialLinks.twitter}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Footer() {
             </a>
             <a
               href={userData.socialLinks.linkedin}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

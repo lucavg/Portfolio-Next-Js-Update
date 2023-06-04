@@ -24,8 +24,8 @@ export default function Experience() {
               />
               {idx === userData.experience.length - 1 ? null : (
                 <div className="divider-container flex flex-col items-center -mt-2">
-                  <div className="w-4 h-4 bg-red-500 rounded-full relative z-10">
-                    <div className="w-4 h-4 bg-red-500 rounded-full relative z-10 animate-ping"></div>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full relative z-10">
+                    <div className="w-4 h-4 bg-blue-500 rounded-full relative z-10 animate-ping"></div>
                   </div>
                   <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>
                 </div>
@@ -45,10 +45,13 @@ const ExperienceCard = ({ title, desc, year, company, companyLink }) => {
         {year}
       </h1>
       <h1 className="font-semibold text-xl">{title}</h1>
-      <a href={companyLink} className="text-gray-500">
+      <a href={companyLink} className="text-gray-500 underline">
         {company}
       </a>
-      <p className="text-gray-700 dark:text-gray-300 my-2">{desc}</p>
+      <p
+        className="text-gray-700 dark:text-gray-300 my-2"
+        dangerouslySetInnerHTML={{ __html: desc }}
+      ></p>
     </div>
   );
 };
