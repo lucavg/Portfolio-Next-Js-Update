@@ -58,3 +58,14 @@ a {
     transform: scale(0.2);
   }
 }
+
+.custom-modal-content {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-modal-image {
+  max-width: 100%;
+  width: 150%;
+  height: 150%;
+}

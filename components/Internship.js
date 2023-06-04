@@ -75,11 +75,11 @@ export default function Internship() {
             </div>
             <div className="flex flex-col justify-center col-span-1 md:col-span-3">
               <div className="slide-container">
-                <Fade {...properties}>
+                <Fade {...properties} transitionDuration={400}>
                   {userData.fadeImages.map((fadeImage, index) => (
                     <div className="flex flex-col justify-center">
                       <img
-                        style={{ width: "100%" }}
+                        style={{ width: "125%" }}
                         src={fadeImage.url}
                         alt={fadeImage.caption}
                         onClick={() => openModal(index)}
@@ -150,10 +150,16 @@ export default function Internship() {
           </div>
         </div>
       </div>
-      <Modal open={modalOpen} onClose={closeModal} center>
-        <div style={{ position: "relative", height: "100%", width: "100%" }}>
+      <Modal
+        open={modalOpen}
+        onClose={closeModal}
+        center
+        styles={{ modal: { maxWidth: "75%" } }}
+        classNames={{ modal: "sm:max-w-fit" }}
+      >
+        <div style={{ height: "100%", width: "100%" }}>
           <img
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "150%", height: "150%", maxWidth: "100%" }}
             src={userData.fadeImages[selectedImage]?.url}
             alt={userData.fadeImages[selectedImage]?.caption}
           />

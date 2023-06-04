@@ -15,7 +15,7 @@ export default function Experience() {
           {userData.experience.map((exp, idx) => (
             <>
               <ExperienceCard
-                key={idx}
+                key={exp.title}
                 title={exp.title}
                 desc={exp.desc}
                 year={exp.year}
