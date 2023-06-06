@@ -16,9 +16,6 @@ export default function Contact() {
               <h1 className="text-gray-700 dark:text-gray-300 font-semibold text-2xl">
                 Get in touch, let's talk.
               </h1>
-              <p className="font-light text-base text-gray-700 dark:text-gray-300 mt-2">
-                Fill in the details and I'll get back to you as soon as I can.
-              </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
               <div className="flex flex-row items-center space-x-6 rounded-md bg-gray-200 dark:bg-gray-600 border border-[#02044A] hover:border hover:border-blue-500 p-4 mb-2">

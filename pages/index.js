@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 export default function Home({}) {
   return (
     <ContainerBlock
-      title="Luca Van Genechten - Developer, Leader, Student"
+      title="Luca Van Genechten"
       description="Just a student who loves to code!"
     >
       <Hero />
@@ -14,4 +14,12 @@ export default function Home({}) {
       <FavouriteProjects />
     </ContainerBlock>
   );
+}
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locale/${locale}.json`),
+    },
+  };
 }

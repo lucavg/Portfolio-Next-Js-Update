@@ -24,7 +24,7 @@ export default function AboutMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {userData.about.currentProject} 🚲
+              {userData.about.currentProject}
             </a>
           </p>
         </div>

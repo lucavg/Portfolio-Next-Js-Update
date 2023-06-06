@@ -1,0 +1,53 @@
+{
+    "Common": {
+        "english": "Engels",
+        "dutch": "Nederlands"
+    },
+    "Home": {
+        "title": "Luca Van Genechten",
+        "description": "Just a developer who loves to code!"
+    },
+    "Hero": {
+        "developer": "Developer",
+        "leader": "Leider",
+        "student": "Student",
+        "me": "Dit ben ik"
+    },
+    "Resume": {
+        "button": "Grab my resume!"
+    },
+    "FavouriteProjects": {
+        "favouriteProjects": "Favourite projects",
+        "viewAll": "View all"
+    },
+    "About": {
+        "title": "About Me - Luca Van Genechten",
+        "description": "Just a developer who loves to code!"
+    },
+    "AboutMe": {
+        "title": "About Me",
+        "slogan": "Just a developer who loves to code!",
+        "currentProject": "Currently working on:",
+        "mail": "Send me a mail!",
+        "jobTitle": "Job Opportunities",
+        "jobDescription1": "I'm looking for a job currently! If you see me as a good fit, check my ",
+        "jobDescriptionLink": "resume",
+        "jobDescription2": " and I'd love to have a chat with you!",
+        "socials": "Social Links",
+        "description1": "Hi! My name is Luca Van Genechten, currently acquiring my bachelor in Application Development at Thomas More Geel. I previously studied 2 years at Karel de Grote University College in Antwerpen, but I later made the switch to Thomas More, where I am currently in my final year.",
+        "description2": "My favorite subject in IT is application development, specifically using Flutter. My knowledge of the IT spectrum is quite wide, though I still learn on a daily basis and intend to keep doing so.",
+        "description3": "My hobbies are programming, Dungeons & Dragons, padel, and I often go swimming as well. I'm also a music lover and I am currently working on a collection of vinyl.",
+        "skills": "My Skills"
+    },
+    "Contact": {
+        "title": "Contact Me - Luca Van Genechten",
+        "description": "Just a developer who loves to code!",
+        "slogan": "Get in touch, let's talk."
+    },
+    "Experience": {
+        "title": "Experience - Luca Van Genechten",
+        "description": "Just a developer who loves to code!",
+        "pageTitle": "Experience"
+        
+    }
+}

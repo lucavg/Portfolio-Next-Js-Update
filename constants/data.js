@@ -13,7 +13,7 @@ const userData = {
       `My favorite subject in IT is application development, specifically using Flutter. My knowledge of the IT spectrum is quite wide, though I still learn on a daily basis and intend to keep doing so.`,
       `My hobbies are programming, Dungeons & Dragons, padel, and I often go swimming as well. I'm also a music lover and I am currently working on a collection of vinyl.`,
     ],
-    currentProject: "Tour de icapps",
+    currentProject: "Tour de icapps 🚲",
     currentProjectUrl: "https://flutter-tour-d-icapps.web.app/",
   },
   experience: [

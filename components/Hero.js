@@ -2,8 +2,10 @@ import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "@constants/data";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   const colors = ["#023047", "#8ecae6", "#219ebc"];
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
@@ -13,7 +15,7 @@ export default function Hero() {
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={colors[0]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-600 dark:text-gray-200 my-2">
-              Developer.
+              {t("developer")}
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[1]}>
@@ -51,7 +53,7 @@ export default function Hero() {
                   d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
                 />
               </svg>
-              <p className="font-mono">That's me</p>
+              <p className="font-mono">{t("me")}</p>
             </div>
           </div>
         </div>

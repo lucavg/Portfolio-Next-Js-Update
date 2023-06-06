@@ -4,7 +4,10 @@ import AboutMe from "../components/AboutMe";
 
 export default function about() {
   return (
-    <ContainerBlock>
+    <ContainerBlock
+      title="About Me - Luca Van Genechten"
+      description="Just a student who loves to code!"
+    >
       <AboutMe />
     </ContainerBlock>
   );
