@@ -169,7 +169,7 @@ export default function Navbar() {
             href={userData.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
+            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-1 md:p-3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ export default function Navbar() {
             href={userData.socialLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
+            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full md:p-3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +203,7 @@ export default function Navbar() {
             href={userData.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
+            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full md:p-3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ export default function Navbar() {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-10 h-10 p-3 rounded focus:outline-none"
+            className="w-10 h-10 md:p-3 rounded focus:outline-none"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {mounted && (
