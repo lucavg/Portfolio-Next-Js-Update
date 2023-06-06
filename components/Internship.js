@@ -84,7 +84,7 @@ export default function Internship() {
                         alt={fadeImage.caption}
                         onClick={() => openModal(index)}
                       />
-                      <h2 className="text-xl mx-auto my-2">
+                      <h2 className="text-xl mx-auto my-2 text-gray-700 dark:text-gray-300">
                         {fadeImage.caption}
                       </h2>
                     </div>
