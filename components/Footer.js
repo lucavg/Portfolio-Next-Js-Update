@@ -1,7 +1,11 @@
 import React from "react";
-import userData from "@constants/data";
+import userDataEn from "@constants/dataEn";
+import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const router = useRouter();
+  const t = useTranslations("Footer");
   return (
     <div className="bg-[#F1F1F1] dark:bg-gray-900">
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
@@ -9,13 +13,13 @@ export default function Footer() {
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
             <p className="text-gray-600 dark:text-gray-300">
-              &copy; Luca Van Genechten. All Rights Reserved.
+              &copy; {t("copyright")}
             </p>
           </div>
           <div>
             {/* Support me by keeping this in the footer, please. :) */}
             <div className="text-gray-600 dark:text-gray-300">
-              Developed by
+              {t("developedBy")}
               <div className="inline-block transform hover:scale-110 hover:-rotate-6 transition duration-300">
                 {/*change URL*/}
                 <a
@@ -29,7 +33,7 @@ export default function Footer() {
           </div>
           <div className="space-x-4 flex flex-row items-center">
             <a
-              href={userData.socialLinks.github}
+              href={userDataEn.socialLinks.github}
               className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg
@@ -44,7 +48,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href={userData.socialLinks.twitter}
+              href={userDataEn.socialLinks.twitter}
               className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg
@@ -59,7 +63,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href={userData.socialLinks.linkedin}
+              href={userDataEn.socialLinks.linkedin}
               className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-2"
             >
               <svg

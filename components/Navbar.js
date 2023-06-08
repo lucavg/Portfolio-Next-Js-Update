@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import userData from "@constants/data";
+import userDataEn from "@constants/dataEn";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const router = useRouter();
+  const t = useTranslations("Navbar");
   console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -27,10 +29,10 @@ export default function Navbar() {
           <div className="flex flex-col">
             <Link href="/">
               <h1 className="font-semibold text-xl dark:text-gray-100">
-                {userData.name}
+                {userDataEn.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                {userData.designation}
+                {userDataEn.designation}
               </p>
             </Link>
           </div>
@@ -45,7 +47,7 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            About{" "}
+            {t("about")}{" "}
             {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Experience{" "}
+            {t("experience")}{" "}
             {router.asPath === "/experience" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Internship{" "}
+            {t("internship")}{" "}
             {router.asPath === "/internship" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +122,7 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Projects
+            {t("projects")}
             {router.asPath === "/projects" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +147,7 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Contact
+            {t("contact")}
             {router.asPath === "/contact" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +168,7 @@ export default function Navbar() {
 
         <div className="space-x-4 flex flex-row items-center">
           <a
-            href={userData.socialLinks.github}
+            href={userDataEn.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full p-1 md:p-3"
@@ -183,7 +185,7 @@ export default function Navbar() {
             </svg>
           </a>
           <a
-            href={userData.socialLinks.twitter}
+            href={userDataEn.socialLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full md:p-3"
@@ -200,7 +202,7 @@ export default function Navbar() {
             </svg>
           </a>
           <a
-            href={userData.socialLinks.linkedin}
+            href={userDataEn.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:bg-blue-500 rounded-full md:p-3"

@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Fade } from "react-slideshow-image";
-import userData from "@constants/data";
+import userDataEn from "@constants/dataEn";
+import userDataNl from "@constants/dataNl";
 import Modal from "react-responsive-modal";
 import "react-slideshow-image/dist/styles.css";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 
 export default function Internship() {
+  const router = useRouter();
+  const t = useTranslations("Internship");
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const data = router.locale === "nl" ? userDataNl : userDataEn;
 
   const buttonStyle = {
     width: "30px",
@@ -21,7 +28,9 @@ export default function Internship() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          fill="#fff"
+          fill="#666"
+          onMouseEnter={(e) => (e.target.style.fill = "#ccc")}
+          onMouseLeave={(e) => (e.target.style.fill = "#666")}
         >
           <path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z" />
         </svg>
@@ -33,6 +42,8 @@ export default function Internship() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
           fill="#fff"
+          onMouseEnter={(e) => (e.target.style.fill = "#ccc")}
+          onMouseLeave={(e) => (e.target.style.fill = "#666")}
         >
           <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
         </svg>
@@ -53,7 +64,7 @@ export default function Internship() {
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Internship
+          {t("pageTitle")}
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
@@ -62,9 +73,9 @@ export default function Internship() {
             <div className="inline-flex flex-col col-span-1 md:col-span-2">
               <div>
                 <h1 className="text-2xl font-semibold text-gray-700 pb-5 dark:text-gray-200">
-                  Developing a Flutter for Web app
+                  {t("descriptionTitle")}
                 </h1>
-                {userData.internshipDescription.map((desc, idx) => (
+                {data.internshipDescription.map((desc, idx) => (
                   <p
                     key={idx}
                     className="text-l mb-4 text-gray-700 dark:text-gray-300"
@@ -76,7 +87,7 @@ export default function Internship() {
             <div className="flex flex-col justify-center col-span-1 md:col-span-3">
               <div className="slide-container">
                 <Fade {...properties} transitionDuration={400}>
-                  {userData.fadeImages.map((fadeImage, index) => (
+                  {data.fadeImages.map((fadeImage, index) => (
                     <div className="flex flex-col justify-center">
                       <img
                         style={{ width: "125%" }}
@@ -98,49 +109,49 @@ export default function Internship() {
                 <div className="mt-4 ml-4">
                   <div className="flex flex-row justify-start items-center">
                     <a
-                      href={userData.documentationLinks.planOfApproach}
+                      href={t("POALink")}
                       className="flex flex-row items-center space-x-4 group"
                     >
                       <div className="my-4">&rarr;</div>
                       <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
-                        Plan of Approach
+                        {t("POA")}
                       </div>
                     </a>
                   </div>
                   <div className="flex flex-row justify-start items-center">
                     <a
-                      href={userData.documentationLinks.realizationReport}
+                      href={t("realizationReportLink")}
                       className="flex flex-row items-center space-x-4 group"
                     >
                       <div className="my-4">&rarr;</div>
                       <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
-                        Realization Report
+                        {t("realizationReport")}
                       </div>
                     </a>
                   </div>
                   <div className="flex flex-row justify-start items-center">
                     <a
-                      href={userData.documentationLinks.reflectionReport}
+                      href={t("reflectionReportLink")}
                       className="flex flex-row items-center space-x-4 group"
                     >
                       <div className="my-4">&rarr;</div>
                       <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
-                        Reflection Report
+                        {t("reflectionReport")}
                       </div>
                     </a>
                   </div>
                   <div className="flex flex-row justify-start items-center">
                     <a
-                      href={userData.documentationLinks.weekReports}
+                      href={t("weekReportsLink")}
                       className="flex flex-row items-center space-x-4 group"
                     >
                       <div className="my-4">&rarr;</div>
                       <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
-                        Week Reports
+                        {t("weekReports")}
                       </div>
                     </a>
                   </div>
@@ -160,10 +171,13 @@ export default function Internship() {
         <div style={{ height: "100%", width: "100%" }}>
           <img
             style={{ width: "150%", height: "150%", maxWidth: "100%" }}
-            src={userData.fadeImages[selectedImage]?.url}
-            alt={userData.fadeImages[selectedImage]?.caption}
+            src={data.fadeImages[selectedImage]?.url}
+            alt={data.fadeImages[selectedImage]?.caption}
           />
         </div>
+        <h2 className="text-xl mx-auto my-2 text-gray-700">
+          {data.fadeImages[selectedImage]?.caption}
+        </h2>
       </Modal>
     </section>
   );

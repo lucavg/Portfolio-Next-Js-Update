@@ -12,3 +12,11 @@ export default function projects() {
     </ContainerBlock>
   );
 }
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locale/${locale}.json`),
+    },
+  };
+}

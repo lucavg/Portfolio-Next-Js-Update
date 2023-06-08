@@ -1,4 +1,4 @@
-const userData = {
+const userDataEn = {
   githubUsername: "lucavg",
   name: "Luca Van Genechten",
   designation: "Full-Stack Developer",
@@ -20,7 +20,8 @@ const userData = {
     {
       title: "Internship Flutter Developer",
       company: "icapps Antwerp",
-      year: "Februari 2023 - May 2023",
+      year: "2023",
+      date: "Februari - May",
       companyLink: "https://icapps.com/",
       desc: 'During my 13-week internship at <b>icapps</b>, I worked as a <b>Flutter Developer</b> on the "Tour de icapps" project, focusing on <b>Flutter for Web</b> development. I worked on this project as a Flutter developer to design and implement features, optimize performance, and ensure a seamless user experience. It was a valuable opportunity to refine my <b>Flutter</b> skills and gain hands-on experience in cross-platform app development.',
     },
@@ -43,6 +44,7 @@ const userData = {
     {
       title: "IT Helpdesk & SAP",
       company: "Ecover Malle",
+      date: "Februari",
       year: "2018",
       companyLink: "https://www.ecover.com/be-nl/",
       desc: "I assisted in the migration from an <b>on-premise</b> working environment to a <b>cloud-based environment</b> using <b>SAP Fiori</b>. I also helped with <b>designing</b> a modern, sleek user interface for the SAP Fiori environment.",
@@ -96,6 +98,10 @@ const userData = {
       githubLink: "https://github.com/lucavg/CAD-Dieren",
       description:
         "CAD is a beautiful one-woman animal protection service. Their website is in dire need of a rebranding and I have been tasked to provide this much-needed makeover. Using the power of Angular and Nest JS, this work-in-progress project has now been give a new life.",
+      project: "The current ",
+      images: [],
+      development: "",
+      learned: "",
     },
     {
       title: "Flutter Beer App",
@@ -176,9 +182,9 @@ const userData = {
     },
   ],
   internshipDescription: [
-    'During my 13-week internship at <b>icapps</b>, I had the opportunity to work as a <b>Flutter Developer</b> on the "<b>Tour de icapps</b>" project, which focused on developing a <b>Flutter for Web</b> application. The Tour de icapps was a <b>competition</b> organized to run parallel to the <b>Tour de France</b>, consisting of multiple <b>stages</b> with <b>challenges</b> for participating teams.',
+    'During my 13-week internship at <b>icapps</b>, I had the opportunity to work as a <b>Flutter Developer</b> on the "<b>Tour de icapps</b>" project, which focused on developing a <b>Flutter for Web</b> application. The Tour de icapps is a <b>competition</b> organized to run parallel to the <b>Tour de France</b>, consisting of multiple <b>stages</b> with <b>challenges</b> for participating teams.',
     "As the sole developer assigned to the project, I took on the <b>responsibility</b> of creating the Tour de icapps application from start to finish. Throughout the internship, I received valuable guidance and support from my team members, who provided me with insights and expertise to ensure the success of the project. My role involved leveraging my proficiency in <b>Flutter</b> to implement a dynamic and engaging user interface for the Tour de icapps application.",
-    "During the development process, I encountered various <b>challenges</b> that required <b>problem-solving</b> skills and adaptability. I successfully addressed these challenges by collaborating with my team, conducting research, and applying industry best practices to optimize the application's performance.",
+    "During the development process, I encountered various <b>challenges</b> that required <b>problem-solving</b> skills and <b>adaptability</b>. I successfully addressed these challenges by collaborating with my team, conducting research, and applying industry best practices to optimize the application's performance.",
     "Working on the Tour de icapps project allowed me to enhance my expertise in <b>Flutter for Web</b> development and gain hands-on experience in working independently on a significant project. It strengthened my ability to <b>manage</b> timelines, <b>prioritize</b> tasks, and deliver <b>high-quality</b> results within a dynamic environment.",
     "In the following documents, you can find the result of this wonderful journey, as well as the process I went through to get there and my view on the journey.",
   ],
@@ -200,12 +206,6 @@ const userData = {
       caption: "Tournament Page",
     },
   ],
-  documentationLinks: {
-    planOfApproach: "/3APPAI01_plan_of_approach_Luca_Van_Genechten_final.pdf",
-    realizationReport: "",
-    reflectionReport: "",
-    weekReports: "",
-  },
   skills: {
     programming: {
       title: "Programming",
@@ -213,6 +213,7 @@ const userData = {
         { name: "Flutter", score: 83 },
         { name: "Angular", score: 72 },
         { name: "Java", score: 75 },
+        { name: "ASP.NET", score: 70 },
         { name: "MySQL", score: 80 },
         { name: "MongoDB", score: 62 },
         { name: "Nest JS", score: 76 },
@@ -251,4 +252,4 @@ const userData = {
   },
 };
 
-export default userData;
+export default userDataEn;

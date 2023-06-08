@@ -1,11 +1,22 @@
 {
     "Common": {
-        "english": "English",
-        "dutch": "Dutch"
+        "english": "ENG",
+        "dutch": "NL"
     },
     "Home": {
         "title": "Luca Van Genechten",
         "description": "Just a developer who loves to code!"
+    },
+    "Footer": {
+        "copyright": "Luca Van Genechten. All rights reserved.",
+        "developedBy": "Developed by"
+    },
+    "Navbar": {
+        "about": "About",
+        "experience": "Experience",
+        "internship": "Internship",
+        "projects": "Projects",
+        "contact": "Contact"
     },
     "Hero": {
         "developer": "Developer",
@@ -48,6 +59,26 @@
         "title": "Experience - Luca Van Genechten",
         "description": "Just a developer who loves to code!",
         "pageTitle": "Experience"
-        
+    },
+    "Internship": {
+        "title": "Internship - Luca Van Genechten",
+        "description": "Just a developer who loves to code!",
+        "pageTitle": "Internship",
+        "descriptionTitle": "Developing a Flutter for Web app",
+        "documentationTitle": "Internship Documentation",
+        "POA": "Plan of Approach",
+        "POALink": "/3APPAI01_plan_of_approach_Luca_Van_Genechten_final_en.pdf",
+        "realizationReport": "Realization Report",
+        "realizationReportLink": "",
+        "reflectionReport": "Reflection Report",
+        "reflectionReportLink": "",
+        "weekReports": "Weekly Reports",
+        "weekReportsLink": ""
+    },
+    "Projects": {
+        "title": "Projects - Luca Van Genechten",
+        "description": "Just a developer who loves to code!"
     }
 }
+
+

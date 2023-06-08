@@ -1,7 +1,7 @@
 import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
-import userData from "@constants/data";
+import userDataEn from "@constants/dataEn";
 import { useTranslations } from "next-intl";
 
 export default function Hero() {
@@ -20,12 +20,12 @@ export default function Hero() {
           </RainbowHighlight>
           <RainbowHighlight color={colors[1]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-600 dark:text-gray-200 my-2">
-              Leader.
+              {t("leader")}
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[2]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-600 dark:text-gray-200 my-2">
-              Student.
+              {t("student")}
             </h1>
           </RainbowHighlight>
         </RoughNotationGroup>
@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
           <img
-            src={userData.avatarUrl}
+            src={userDataEn.avatarUrl}
             alt="avatar"
             className=" shadow max-h-96"
           />

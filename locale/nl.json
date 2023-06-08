@@ -1,11 +1,22 @@
 {
     "Common": {
-        "english": "Engels",
-        "dutch": "Nederlands"
+        "english": "ENG",
+        "dutch": "NL"
     },
     "Home": {
         "title": "Luca Van Genechten",
-        "description": "Just a developer who loves to code!"
+        "description": "Gewoon een developer die graag codeert!"
+    },
+    "Footer": {
+        "copyright": "Luca Van Genechten. Alle rechten voorbehouden.",
+        "developedBy": "Ontwikkeld door"
+    },
+    "Navbar": {
+        "about": "Over Mezelf",
+        "experience": "Ervaring",
+        "internship": "Stage",
+        "projects": "Projecten",
+        "contact": "Contact"
     },
     "Hero": {
         "developer": "Developer",
@@ -14,40 +25,54 @@
         "me": "Dit ben ik"
     },
     "Resume": {
-        "button": "Grab my resume!"
+        "button": "Bekijk mijn CV!"
     },
     "FavouriteProjects": {
-        "favouriteProjects": "Favourite projects",
-        "viewAll": "View all"
+        "favouriteProjects": "Favoriete projecten",
+        "viewAll": "Alles bekijken"
     },
     "About": {
-        "title": "About Me - Luca Van Genechten",
-        "description": "Just a developer who loves to code!"
+        "title": "Over Mezelf - Luca Van Genechten",
+        "description": "Gewoon een developer die graag codeert!"
     },
     "AboutMe": {
-        "title": "About Me",
-        "slogan": "Just a developer who loves to code!",
-        "currentProject": "Currently working on:",
-        "mail": "Send me a mail!",
-        "jobTitle": "Job Opportunities",
-        "jobDescription1": "I'm looking for a job currently! If you see me as a good fit, check my ",
-        "jobDescriptionLink": "resume",
-        "jobDescription2": " and I'd love to have a chat with you!",
-        "socials": "Social Links",
-        "description1": "Hi! My name is Luca Van Genechten, currently acquiring my bachelor in Application Development at Thomas More Geel. I previously studied 2 years at Karel de Grote University College in Antwerpen, but I later made the switch to Thomas More, where I am currently in my final year.",
-        "description2": "My favorite subject in IT is application development, specifically using Flutter. My knowledge of the IT spectrum is quite wide, though I still learn on a daily basis and intend to keep doing so.",
-        "description3": "My hobbies are programming, Dungeons & Dragons, padel, and I often go swimming as well. I'm also a music lover and I am currently working on a collection of vinyl.",
-        "skills": "My Skills"
+        "title": "Over Mezelf",
+        "description": "Gewoon een developer die graag codeert!",
+        "currentProject": "Momenteel bezig met:",
+        "mail": "Stuur mij een mailtje!",
+        "jobTitle": "Carrièremogelijkheden",
+        "jobDescription1": "Ik ben momenteel op zoek naar een job! Als je mij geschikt vindt, kijk dan op mijn ",
+        "jobDescriptionLink": "CV",
+        "jobDescription2": " en nodig mij eens uit om te babbelen!",
+        "socials": "Sociale Media",
+        "description1": "Hoi, mijn naam is Luca Van Genechten en ik studeer momenteel af aan Thomas More Geel. Voordien studeerde ik 2 jaar aan de Karel de Grote Hogeschool in Antwerpen, maar later maakte ik de overstap naar Thomas More, waar ik momenteel in mijn laatste jaar zit.",
+        "description2": "Mijn favoriete onderwerp in de IT is applicatieontwikkeling, met name het gebruik van Flutter. Mijn kennis van het IT-spectrum is vrij breed, hoewel ik nog steeds dagelijks bijleer en van plan ben dat te blijven doen.",
+        "description3": "Mijn hobby's zijn programmeren, Dungeons & Dragons, padel en ik ga ook vaak zwemmen. Ik ben ook een muziekliefhebber en werk momenteel aan een verzameling vinyl.",
+        "skills": "Mijn Skills"
     },
     "Contact": {
-        "title": "Contact Me - Luca Van Genechten",
-        "description": "Just a developer who loves to code!",
-        "slogan": "Get in touch, let's talk."
+        "title": "Contacteer Mij - Luca Van Genechten",
+        "description": "Gewoon een developer die graag codeert!",
+        "slogan": "Neem contact op, laten we praten."
     },
     "Experience": {
-        "title": "Experience - Luca Van Genechten",
-        "description": "Just a developer who loves to code!",
-        "pageTitle": "Experience"
-        
+        "title": "Ervaring - Luca Van Genechten",
+        "description": "Gewoon een developer die graag codeert!",
+        "pageTitle": "Ervaring"
+    },
+    "Internship": {
+        "title": "Stage - Luca Van Genechten",
+        "description": "Gewoon een developer die graag codeert!",
+        "pageTitle": "Stage",
+        "descriptionTitle": "Een Flutter for Web-app ontwikkelen",
+        "documentationTitle": "Stage Documentatie",
+        "POA": "Plan van Aanpak",
+        "POALink": "/3APPAI01_plan_of_approach_Luca_Van_Genechten_final_nl.pdf",
+        "realizationReport": "Realisatierapport",
+        "realizationReportLink": "",
+        "reflectionReport": "Reflectierapport",
+        "reflectionReportLink": "",
+        "weekReports": "Wekelijks Rapport",
+        "weekReportsLink": ""
     }
 }

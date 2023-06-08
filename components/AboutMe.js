@@ -1,5 +1,5 @@
 import React from "react";
-import userData from "@constants/data";
+import userDataEn from "@constants/dataEn";
 import SkillsSection from "./Skills";
 
 export default function AboutMe() {
@@ -16,15 +16,15 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title} Currently working on:
+            {userDataEn.about.title} Currently working on:
             <br />{" "}
             <a
               className="bg-blue-500 rounded-md px-2 py-1 text-white"
-              href={userData.about.currentProjectUrl}
+              href={userDataEn.about.currentProjectUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {userData.about.currentProject}
+              {userDataEn.about.currentProject}
             </a>
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function AboutMe() {
           <div className="inline-flex flex-col">
             <div>
               <a
-                href={`mailto:${userData.email}`}
+                href={`mailto:${userDataEn.email}`}
                 className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function AboutMe() {
                 I'm looking for a job currently! If you see me as a good fit,
                 check my{" "}
                 <a
-                  href={userData.resumeUrl}
+                  href={userDataEn.resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
@@ -80,7 +80,7 @@ export default function AboutMe() {
             <div className="mt-4 ml-4">
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.twitter}
+                  href={userDataEn.socialLinks.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -104,7 +104,7 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.github}
+                  href={userDataEn.socialLinks.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -128,7 +128,7 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.linkedin}
+                  href={userDataEn.socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -153,7 +153,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-2">
-            {userData.about.description?.map((desc, idx) => (
+            {userDataEn.about.description?.map((desc, idx) => (
               <p
                 key={idx}
                 className="text-xl mb-4 text-gray-700 dark:text-gray-300"
@@ -165,7 +165,7 @@ export default function AboutMe() {
             <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               My Skills
             </h1>
-            <SkillsSection skills={userData.skills} />
+            <SkillsSection skills={userDataEn.skills} />
           </div>
         </div>
       </div>

@@ -121,7 +121,7 @@ export const Grid = ({ data, filterEnabled }) => {
             placeholder="Search"
             value={searchQuery}
             onChange={handleSearchChange}
-            className="px-4 py-1 bg-[#F1F1F1] dark:bg-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 my-4"
+            className="mx-4 px-4 py-1 bg-[#F1F1F1] dark:bg-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 my-4"
           />
           <Select
             isMulti

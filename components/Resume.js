@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 export default function Resume() {
+  const t = useTranslations("Resume");
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden mt-5">
       <div className="w-full md:w-1/2 max-w-md mx-auto text-center md:text-left lg:p-20">
@@ -24,7 +26,7 @@ export default function Resume() {
           >
             <path d="M17 13v-13h-2v5h-2v-3h-2v7h-2v-9h-2v13h-6l11 11 11-11z" />
           </svg>
-          <p>Grab my resume!</p>
+          <p>{t("button")}</p>
         </Link>
       </div>
     </div>
