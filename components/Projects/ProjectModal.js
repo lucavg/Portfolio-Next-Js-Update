@@ -114,7 +114,7 @@ function ProjectModal({ fullProject }) {
           __html: learned,
         }}
       ></p>
-      {image && <img style={{ width: "125%" }} src={image} alt={image} />}
+      {image && <img className="max-h-96 mx-auto" src={image} alt={image} />}
       {videoLink && <ReactPlayer url={videoLink} controls={true} />}
     </div>
   );
