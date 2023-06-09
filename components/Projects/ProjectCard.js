@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import ProjectModal from "./ProjectModal";
+import { useTranslations } from "next-intl";
 
 export const Card = (project) => {
+  const t = useTranslations("Projects");
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
@@ -15,8 +17,9 @@ export const Card = (project) => {
         className="w-80 h-80 object-contain mx-auto"
       />
       <div className="absolute inset-0 bg-gray-900 opacity-0 transition-opacity group-hover:opacity-90 overflow-y-auto">
-        <div className="absolute inset-0 p-4 text-white flex flex-col items-stretch justify-evenly">
-          <div className="flex flex-wrap items-center mb-4">
+        <div className="absolute inset-0 p-4 text-white flex flex-col items-stretch justify-between">
+          <div className="text-md text-gray-400 mt-8">{project.category}</div>
+          <div className="flex flex-wrap items-center">
             {project.tags.map((tag) => (
               <span
                 key={tag}
@@ -26,9 +29,20 @@ export const Card = (project) => {
               </span>
             ))}
           </div>
+          <div
+            className="text-md text-gray-400 overflow-hidden text-ellipsis"
+            style={{
+              display: "-webkit-box",
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: "vertical",
+            }}
+            dangerouslySetInnerHTML={{
+              __html: project.project,
+            }}
+          ></div>
           <button onClick={onOpenModal}>
             <span className="bg-blue-500 text-white p-3 py-1 rounded-md m-3 hover:bg-blue-700">
-              Read more...
+              {t("more")}
             </span>
           </button>
         </div>
@@ -46,7 +60,7 @@ export const Card = (project) => {
           }}
           animationDuration={400}
         >
-          <ProjectModal project={project}></ProjectModal>
+          <ProjectModal fullProject={project}></ProjectModal>
         </Modal>
       </div>
       <h1 className="absolute top-2 left-2 z-5 text-white font-bold px-3 py-1 bg-blue-500 rounded-md">

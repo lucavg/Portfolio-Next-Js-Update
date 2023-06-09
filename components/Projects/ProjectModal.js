@@ -1,13 +1,30 @@
+import { useTranslations } from "next-intl";
 import React from "react";
-import { FiFile, FiGithub } from "react-icons/fi";
+import { FiFile, FiGithub, FiLink } from "react-icons/fi";
+import ReactPlayer from "react-player";
 
-function ProjectModal({ project }) {
-  const { title, imgUrl, tags, description, fileLink, githubLink } = project;
+function ProjectModal({ fullProject }) {
+  const t = useTranslations("Projects");
+  const {
+    title,
+    imgUrl,
+    participants,
+    tags,
+    category,
+    project,
+    image,
+    development,
+    learned,
+    fileLink,
+    hyperLink,
+    githubLink,
+    videoLink,
+  } = fullProject;
 
   return (
     <div className="bg-white p-6 rounded-lg">
       <div className="relative">
-        <div className="flex absolute top-0 right-0 mt-2 mr-2 space-x-2 text-2xl">
+        <div className="flex absolute top-0 right-0 -mt-2 mr-2 space-x-2 text-2xl">
           {fileLink && (
             <a
               href={fileLink}
@@ -28,6 +45,16 @@ function ProjectModal({ project }) {
               <FiGithub className="mr-1" />
             </a>
           )}
+          {hyperLink && (
+            <a
+              href={hyperLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-700 flex items-center"
+            >
+              <FiLink className="mr-1" />
+            </a>
+          )}
         </div>
         <div className="h-40 overflow-hidden rounded-lg">
           <img
@@ -37,8 +64,9 @@ function ProjectModal({ project }) {
           />
         </div>
       </div>
-      <h2 className="text-xl font-bold mb-2 text-gray-600">{title}</h2>
-      <div className="flex flex-wrap items-center mb-4">
+      <h2 className="text-2xl font-bold text-gray-600">{title}</h2>
+      <div className="text-sm font-bold mb-2 text-gray-400">{category}</div>
+      <div className="flex flex-wrap items-center">
         {tags.map((tag) => (
           <span
             key={tag}
@@ -48,10 +76,46 @@ function ProjectModal({ project }) {
           </span>
         ))}
       </div>
+      {participants && (
+        <div className="text-sm font-bold mb-2 text-gray-400">
+          {t("participants")}
+        </div>
+      )}
+      {participants && (
+        <div className="flex flex-wrap items-center">
+          {participants.map((participant) => (
+            <span
+              key={participant}
+              className="text-white text-sm bg-gray-400 px-3 py-1 rounded-md mr-2 mb-2"
+            >
+              {participant}
+            </span>
+          ))}
+        </div>
+      )}
+      <h1 className="text-lg font-bold mb-2 text-gray-600">{t("subtitle1")}</h1>
       <p
-        className="text-gray-600"
-        dangerouslySetInnerHTML={{ __html: description }}
+        className="text-gray-600 mb-3 SearchResult-body"
+        dangerouslySetInnerHTML={{
+          __html: project,
+        }}
       ></p>
+      <h1 className="text-lg font-bold mb-2 text-gray-600">{t("subtitle2")}</h1>
+      <p
+        className="text-gray-600 mb-3"
+        dangerouslySetInnerHTML={{
+          __html: development,
+        }}
+      ></p>
+      <h1 className="text-lg font-bold mb-2 text-gray-600">{t("subtitle3")}</h1>
+      <p
+        className="text-gray-600 mb-3"
+        dangerouslySetInnerHTML={{
+          __html: learned,
+        }}
+      ></p>
+      {image && <img style={{ width: "125%" }} src={image} alt={image} />}
+      {videoLink && <ReactPlayer url={videoLink} controls={true} />}
     </div>
   );
 }

@@ -22,7 +22,7 @@ const userDataNl = {
       company: "icapps Antwerp",
       year: "Februari 2023 - May 2023",
       companyLink: "https://icapps.com/",
-      desc: 'Tijdens mijn stage van 13 weken bij <b>icapps</b> heb ik als <b>Flutter-developer</b> gewerkt aan het project "Tour de icapps", waarbij de focus lag op <b>Flutter for Web</b>. I worked on this project as a Flutter developer to design and implement features, optimize performance, and ensure a seamless user experience. Het was een waardevolle kans om mijn Flutter-vaardigheden te verfijnen en praktijkervaring op te doen in cross-platform app-ontwikkeling.',
+      desc: 'Tijdens mijn stage van 13 weken bij <b>icapps</b> heb ik als <b>Flutter-developer</b> gewerkt aan het project "Tour de icapps", waarbij de focus lag op <b>Flutter for Web</b>. Ik heb aan dit project gewerkt als Flutter-developer om functies te <b>ontwerpen</b> en te <b>implementeren</b>, de performantie te <b>optimaliseren</b> en te zorgen voor een naadloze gebruikerservaring. Het was een waardevolle kans om mijn Flutter-vaardigheden te verfijnen en praktijkervaring op te doen in cross-platform app-ontwikkeling.',
     },
     {
       title: "IT Services & SAP",
@@ -30,7 +30,7 @@ const userDataNl = {
       year: "2020-2022",
       companyLink: "http://www.houtluyten.be/",
       desc:
-        "Bij Hout Luyten bestond mijn functie uit het assisteren bij de overgang van het oude <b>ERP-systeem</b> (SDP) naar het huidige systeem dat Hout Luyten gebruikt (<b>SAP Business One 9.3</b>). My tasks mostly consisted of entering articles into the system and making sure all the data was accounted for." +
+        "Bij Hout Luyten bestond mijn functie uit het assisteren bij de overgang van het oude <b>ERP-systeem</b> (SDP) naar het huidige systeem dat Hout Luyten gebruikt (<b>SAP Business One 9.3</b>). Mijn taken bestonden voornamelijk uit het invoeren van artikelen in het systeem en ervoor zorgen dat alle gegevens werden verantwoord." +
         " Gedurende deze tijd had ik ook het voorrecht om deel te nemen aan <b>zakelijke meetings</b> die bestonden uit het algemeen management van Hout Luyten en vertegenwoordigers van SAP.",
     },
     {
@@ -45,7 +45,7 @@ const userDataNl = {
       company: "Ecover Malle",
       year: "2018",
       companyLink: "https://www.ecover.com/be-nl/",
-      desc: "I assisted in the migration from an <b>on-premise</b> working environment to a <b>cloud-based environment</b> using <b>SAP Fiori</b>. Ook heb ik geholpen met het <b>ontwerpen</b> van een moderne, strakke gebruikersinterface voor de SAP Fiori-omgeving.",
+      desc: "Ik heb geholpen bij de migratie van een <b>on-premise</b> werkomgeving naar een <b>cloud-based omgeving</b> met behulp van <b>SAP Fiori</b>. Ook heb ik geholpen met het <b>ontwerpen</b> van een moderne, strakke gebruikersinterface voor de SAP Fiori-omgeving.",
     },
   ],
   resumeUrl:
@@ -56,6 +56,7 @@ const userDataNl = {
     linkedin: "https://www.linkedin.com/in/luca-van-genechten/",
     github: "https://github.com/lucavg",
   },
+
   fadeImages: [
     {
       url: "/screenshots/home.png",

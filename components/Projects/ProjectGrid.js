@@ -3,6 +3,7 @@ import { Card } from "./ProjectCard";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 import { Animate } from "react-simple-animate";
+import { useTranslations } from "next-intl";
 
 export const Grid = ({ data, filterEnabled }) => {
   const [selectedTags, setSelectedTags] = useState([]);
@@ -11,6 +12,7 @@ export const Grid = ({ data, filterEnabled }) => {
   const [availableCategories, setAvailableCategories] = useState([]);
   const [filterKey, setFilterKey] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
+  const t = useTranslations("Projects");
 
   useEffect(() => {
     const tags = Array.from(new Set(data.flatMap((item) => item.tags))).sort();
@@ -70,7 +72,7 @@ export const Grid = ({ data, filterEnabled }) => {
     selectedTags,
     selectedCategories,
     searchQuery
-  );
+  ).sort((a, b) => a.title.localeCompare(b.title));
 
   const tagOptions = availableTags.map((tag) => ({
     value: tag,
@@ -118,16 +120,16 @@ export const Grid = ({ data, filterEnabled }) => {
         <div className="flex flex-col justify-evenly md:flex-row my-4 z-10">
           <input
             type="text"
-            placeholder="Search"
+            placeholder={t("search")}
             value={searchQuery}
             onChange={handleSearchChange}
-            className="mx-4 px-4 py-1 bg-[#F1F1F1] dark:bg-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 my-4"
+            className="mx-4 px-4 py-1 bg-[#FFFFFF] dark:bg-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 my-4"
           />
           <Select
             isMulti
             isSearchable
             components={makeAnimated()}
-            placeholder="Filter Tags"
+            placeholder={t("tags")}
             value={tagOptions.filter((option) =>
               selectedTags.includes(option.value)
             )}
@@ -139,7 +141,7 @@ export const Grid = ({ data, filterEnabled }) => {
             isMulti
             isSearchable
             components={makeAnimated()}
-            placeholder="Filter Categories"
+            placeholder={t("categories")}
             value={categoryOptions.filter((option) =>
               selectedCategories.includes(option.value)
             )}
@@ -155,6 +157,7 @@ export const Grid = ({ data, filterEnabled }) => {
             key={filterKey + index}
             play
             durationSeconds={1}
+            delay={0.1 * index}
             start={{
               opacity: 0,
               transform: "translateX(-20px)",

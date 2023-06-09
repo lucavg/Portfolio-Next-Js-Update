@@ -2,16 +2,20 @@ import React from "react";
 import Link from "next/link";
 import { Grid } from "./Projects/ProjectGrid";
 import userDataEn from "@constants/dataEn";
+import userDataNl from "@constants/dataNl";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 
 export default function FavouriteProjects() {
+  const router = useRouter();
+  const data = router.locale === "nl" ? userDataNl : userDataEn;
   const t = useTranslations("FavouriteProjects");
   return (
     <div className="bg-[#F1F1F1] -mt-56 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col md:flex-row justify-between items-center pt-28 md:pt-40 mx-10 md:my-20 lg:my-5">
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-black dark:text-white my-20 md:my-0 text-center">
-            {t("favouriteProjects")}
+            {t("pageTitle")}
           </h1>
           <Link
             href="/projects"
@@ -36,7 +40,7 @@ export default function FavouriteProjects() {
           </Link>
         </header>
         <Grid
-          data={userDataEn.favouriteProjectData}
+          data={data.projects.filter((project) => project.favourite)}
           filterEnabled={false}
         ></Grid>
       </div>

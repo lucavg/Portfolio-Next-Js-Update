@@ -1,13 +1,19 @@
 import React from "react";
 import userDataEn from "@constants/dataEn";
+import userDataNl from "@constants/dataNl";
 import SkillsSection from "./Skills";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 
 export default function AboutMe() {
+  const router = useRouter();
+  const data = router.locale === "nl" ? userDataNl : userDataEn;
+  const t = useTranslations("AboutMe");
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          About Me
+          {t("title")}
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
@@ -16,32 +22,31 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userDataEn.about.title} Currently working on:
+            {data.about.title} {t("currentProject")}
             <br />{" "}
             <a
               className="bg-blue-500 rounded-md px-2 py-1 text-white"
-              href={userDataEn.about.currentProjectUrl}
+              href={data.about.currentProjectUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {userDataEn.about.currentProject}
+              {data.about.currentProject}
             </a>
           </p>
         </div>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
-          {/* Social Buttons */}
           <div className="inline-flex flex-col">
             <div>
               <a
-                href={`mailto:${userDataEn.email}`}
+                href={`mailto:${data.email}`}
                 className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <h1 className="flex flex-row text-xl font-semibold text-gray-700 dark:text-gray-200">
-                  Send me a mail!
+                  {t("mail")}
                   <svg
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,29 +63,28 @@ export default function AboutMe() {
             </div>
             <div className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                Job Opportunities
+                {t("jobTitle")}
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a job currently! If you see me as a good fit,
-                check my{" "}
+                {t("jobDescription1")}{" "}
                 <a
-                  href={userDataEn.resumeUrl}
+                  href={data.resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  resume
+                  {t("jobDescriptionLink")}
                 </a>{" "}
-                and I'd love to have a chat with you.
+                {t("jobDescription2")}
               </p>
             </div>
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
-              Social Links
+              {t("socials")}
             </h1>
             <div className="mt-4 ml-4">
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userDataEn.socialLinks.twitter}
+                  href={data.socialLinks.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -104,7 +108,7 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userDataEn.socialLinks.github}
+                  href={data.socialLinks.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -128,7 +132,7 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userDataEn.socialLinks.linkedin}
+                  href={data.socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -153,7 +157,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-2">
-            {userDataEn.about.description?.map((desc, idx) => (
+            {data.about.description?.map((desc, idx) => (
               <p
                 key={idx}
                 className="text-xl mb-4 text-gray-700 dark:text-gray-300"
@@ -163,9 +167,9 @@ export default function AboutMe() {
             ))}
 
             <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              My Skills
+              {t("skills")}
             </h1>
-            <SkillsSection skills={userDataEn.skills} />
+            <SkillsSection skills={data.skills} />
           </div>
         </div>
       </div>

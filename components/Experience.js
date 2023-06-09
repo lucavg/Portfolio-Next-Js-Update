@@ -1,18 +1,24 @@
 import userDataEn from "@constants/dataEn";
+import userDataNl from "@constants/dataNl";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 import React from "react";
 
 export default function Experience() {
+  const router = useRouter();
+  const data = router.locale === "nl" ? userDataNl : userDataEn;
+  const t = useTranslations("Experience");
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Experience
+          {t("pageTitle")}
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/* Experience card */}
-          {userDataEn.experience.map((exp, idx) => (
+          {data.experience.map((exp, idx) => (
             <>
               <ExperienceCard
                 key={exp.title}
@@ -23,7 +29,7 @@ export default function Experience() {
                 company={exp.company}
                 companyLink={exp.companyLink}
               />
-              {idx === userDataEn.experience.length - 1 ? null : (
+              {idx === data.experience.length - 1 ? null : (
                 <div className="divider-container flex flex-col items-center -mt-2">
                   <div className="w-4 h-4 bg-blue-500 rounded-full relative z-10">
                     <div className="w-4 h-4 bg-blue-500 rounded-full relative z-10 animate-ping"></div>

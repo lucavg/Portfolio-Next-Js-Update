@@ -1,12 +1,14 @@
 import React from "react";
 import userDataEn from "@constants/dataEn";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("Contact");
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Contact
+          {t("pageTitle")}
         </h1>
       </div>
       <div className="rounded-md shadow-md bg-[#F1F1F1] dark:bg-gray-900 p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
@@ -14,7 +16,7 @@ export default function Contact() {
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-700 dark:text-gray-300 font-semibold text-2xl">
-                Get in touch, let's talk.
+                {t("slogan")}
               </h1>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -68,14 +70,14 @@ export default function Contact() {
                   <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z" />
                 </svg>
                 <p className="text-gray-700 dark:text-gray-300 font-light text-sm">
-                  {userDataEn.address}
+                  {t("address")}
                 </p>
               </div>
             </div>
           </div>
           <div className="inline-flex flex-col justify-center">
             <h1 className="text-xl font-semibold text-gray-700 mt-2 md:mt-8 dark:text-gray-200">
-              Social Links
+              {t("socials")}
             </h1>
             <div className="mt-4 ml-4">
               <div className="flex flex-row justify-start items-center">

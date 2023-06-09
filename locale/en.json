@@ -28,7 +28,7 @@
         "button": "Grab my resume!"
     },
     "FavouriteProjects": {
-        "favouriteProjects": "Favourite projects",
+        "pageTitle": "Favourite projects",
         "viewAll": "View all"
     },
     "About": {
@@ -42,7 +42,8 @@
         "mail": "Send me a mail!",
         "jobTitle": "Job Opportunities",
         "jobDescription1": "I'm looking for a job currently! If you see me as a good fit, check my ",
-        "jobDescriptionLink": "resume",
+        "jobDescriptionLink": "resume",        
+        "resumeUrl": "https://drive.google.com/file/d/1BryYhwZw4c0bczsJLKeDo-pyx70kVkaE/view?usp=share_link",
         "jobDescription2": " and I'd love to have a chat with you!",
         "socials": "Social Links",
         "description1": "Hi! My name is Luca Van Genechten, currently acquiring my bachelor in Application Development at Thomas More Geel. I previously studied 2 years at Karel de Grote University College in Antwerpen, but I later made the switch to Thomas More, where I am currently in my final year.",
@@ -53,7 +54,10 @@
     "Contact": {
         "title": "Contact Me - Luca Van Genechten",
         "description": "Just a developer who loves to code!",
-        "slogan": "Get in touch, let's talk."
+        "pageTitle": "Contact Me",
+        "slogan": "Get in touch, let's talk.",
+        "address": "Vorselaar, Antwerp, Belgium",
+        "socials": "Social Links"
     },
     "Experience": {
         "title": "Experience - Luca Van Genechten",
@@ -77,7 +81,16 @@
     },
     "Projects": {
         "title": "Projects - Luca Van Genechten",
-        "description": "Just a developer who loves to code!"
+        "description": "Just a developer who loves to code!",
+        "pageTitle": "Projects",
+        "more": "Read More...",
+        "participants": "Participants:",
+        "subtitle1": "Description",
+        "subtitle2": "Development",
+        "subtitle3": "What did I learn?",
+        "search": "Search",
+        "tags": "Filter Tags",
+        "categories": "Filter Categories"
     }
 }
 

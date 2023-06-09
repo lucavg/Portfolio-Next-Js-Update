@@ -28,7 +28,7 @@
         "button": "Bekijk mijn CV!"
     },
     "FavouriteProjects": {
-        "favouriteProjects": "Favoriete projecten",
+        "pageTitle": "Favoriete projecten",
         "viewAll": "Alles bekijken"
     },
     "About": {
@@ -53,7 +53,10 @@
     "Contact": {
         "title": "Contacteer Mij - Luca Van Genechten",
         "description": "Gewoon een developer die graag codeert!",
-        "slogan": "Neem contact op, laten we praten."
+        "pageTitle": "Contacteer Mij",
+        "slogan": "Neem contact op, laten we praten.",
+        "address": "Vorselaar, Antwerpen, België",
+        "socials": "Sociale Media"
     },
     "Experience": {
         "title": "Ervaring - Luca Van Genechten",
@@ -74,5 +77,18 @@
         "reflectionReportLink": "",
         "weekReports": "Wekelijks Rapport",
         "weekReportsLink": ""
+    },
+    "Projects": {
+        "title": "Projecten - Luca Van Genechten",
+        "description": "Gewoon een developer die graag codeert!",
+        "pageTitle": "Projecten",
+        "more": "Lees Meer...",
+        "participants": "Deelnemers:",
+        "subtitle1": "Omschrijving",
+        "subtitle2": "Uitwerking",
+        "subtitle3": "Wat heb ik geleerd?",
+        "search": "Zoeken",
+        "tags": "Tags Filteren",
+        "categories": "Categorieën Filteren"
     }
 }
