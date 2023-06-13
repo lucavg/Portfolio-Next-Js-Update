@@ -1,7 +1,9 @@
 import React from "react";
 import { Animate } from "react-simple-animate";
 
-const SkillRow = ({ name, score, icon }) => {
+const SkillRow = ({ name, score, index }) => {
+  const delay = 0.1 * index;
+
   return (
     <div className="flex items-center space-x-4 mb-2">
       <div className="flex-grow">
@@ -10,6 +12,7 @@ const SkillRow = ({ name, score, icon }) => {
           key={name + score}
           play
           durationSeconds={1}
+          delay={delay}
           start={{
             opacity: 0,
             transform: "translateX(-20px)",
@@ -47,7 +50,7 @@ const SkillsSection = ({ skills }) => {
             <h2 className="text-lg font-semibold mb-2">{title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {sortedSkills.map((skill, index) => (
-                <SkillRow key={index} {...skill} />
+                <SkillRow key={index} index={index} {...skill} />
               ))}
             </div>
           </div>
