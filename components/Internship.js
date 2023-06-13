@@ -137,28 +137,18 @@ export default function Internship() {
                     </Link>
                   </div>
                   <div className="flex flex-row justify-start items-center">
-                    <a
+                    <Link
                       href={t("reflectionReportLink")}
                       className="flex flex-row items-center space-x-4 group"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div className="my-4">&rarr;</div>
                       <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
                         {t("reflectionReport")}
                       </div>
-                    </a>
-                  </div>
-                  <div className="flex flex-row justify-start items-center">
-                    <a
-                      href={t("weekReportsLink")}
-                      className="flex flex-row items-center space-x-4 group"
-                    >
-                      <div className="my-4">&rarr;</div>
-                      <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                        <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
-                        {t("weekReports")}
-                      </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
