@@ -41,7 +41,7 @@ export default function Internship() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          fill="#fff"
+          fill="#666"
           onMouseEnter={(e) => (e.target.style.fill = "#ccc")}
           onMouseLeave={(e) => (e.target.style.fill = "#666")}
         >
