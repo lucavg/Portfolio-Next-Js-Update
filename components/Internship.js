@@ -6,6 +6,7 @@ import Modal from "react-responsive-modal";
 import "react-slideshow-image/dist/styles.css";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Internship() {
   const router = useRouter();
@@ -108,7 +109,7 @@ export default function Internship() {
                 </h1>
                 <div className="mt-4 ml-4">
                   <div className="flex flex-row justify-start items-center">
-                    <a
+                    <Link
                       href={t("POALink")}
                       className="flex flex-row items-center space-x-4 group"
                     >
@@ -117,7 +118,7 @@ export default function Internship() {
                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-52 group-hover:translate-x-0 transition duration-300"></div>
                         {t("POA")}
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex flex-row justify-start items-center">
                     <a

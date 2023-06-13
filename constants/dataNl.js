@@ -63,7 +63,6 @@ const userDataNl = {
       imgUrl: "/CAD.png",
       category: "Web Development",
       tags: ["Angular", "Nest JS", "MongoDB", "TypeScript"],
-      fileLink: "/CAD-Dieren.pdf",
       githubLink: "https://github.com/lucavg/CAD-Dieren",
       project:
         "CAD is een prachtige <b>dierenbeschermingsdienst</b> die wordt geleid door mijn tante Sophie Vandenbroucke. De huidige CAD-website is erg ouderwets en eenvoudig, en vereist handmatige bewerking om elke pagina bij te werken. Ik kreeg de taak om deze website te vernieuwen om de <b>gebruikerservaring te verbeteren</b>, niet alleen voor de bezoekers van de website, maar ook voor mijn tante, de beheerder van de website. Op haar verzoek ben ik momenteel de hele website opnieuw aan het maken met nieuwere technologieën zoals <b>Angular</b>, met behoud van de oude vertrouwde uitstraling van de vorige versie.",

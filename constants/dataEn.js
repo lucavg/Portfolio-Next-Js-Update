@@ -65,7 +65,6 @@ const userDataEn = {
       imgUrl: "/CAD.png",
       category: "Web Development",
       tags: ["Angular", "Nest JS", "MongoDB", "TypeScript"],
-      fileLink: "/CAD-Dieren.pdf",
       githubLink: "https://github.com/lucavg/CAD-Dieren",
       project:
         "CAD is a beautiful one-woman <b>animal protection service</b>, led by my aunt Sophie Vandenbroucke. The current CAD website is very archaic and simple and requires manual editing to update each page. I was tasked with renewing this website in order to <b>improve the user experience</b>, not only for visitors of the website but also for my aunt, the administrator of the website. At her request, I am currently recreating the entire website with newer technologies such as <b>Angular</b>, while maintaining the old and beloved feel of the previous rendition.",
