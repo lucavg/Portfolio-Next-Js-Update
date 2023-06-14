@@ -258,7 +258,6 @@ const userDataNl = {
         { name: "Nest JS", score: 76 },
         { name: "Next JS", score: 70 },
         { name: "React", score: 70 },
-        { name: "Cordova", score: 65 },
       ],
     },
     other: {
