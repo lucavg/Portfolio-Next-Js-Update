@@ -174,7 +174,7 @@ const userDataNl = {
       tags: ["PHP", "Laravel", "MySQL", "HTML", "CSS"],
       githubLink: "https://github.com/itfactory-tm/2022-ProjectPHP-302",
       project:
-        "Een <b>adviesbureau</b> applicatie gemaakt met <b>Laravel</b> en <b>PHP</b>, ontwikkeld in samenwerking met Rikko Keuppens, Matthias Verstappen, Bram Augenbroe, Britt De Keyser en Zion Van Der Weehe. Dit project heeft mij een goed inzicht gegeven in hoe het is om in een groep te werken, evenals het werken met een klant.",
+        "Een <b>adviesbureau</b> applicatie gemaakt met <b>Laravel</b> en <b>PHP</b>, ontwikkeld in samenwerking met 5 medestudenten. Dit project heeft mij een goed inzicht gegeven in hoe het is om in een groep te werken, evenals het werken met een klant.",
       development:
         "Tijdens de ontwikkeling van dit project was ik aangewezen als de <b>SCRUM-master</b> en hielp ik ook bij de ontwikkeling van de applicatie. Ik was verantwoordelijk voor de <b>planning</b> van het project en de <b>dagelijkse stand-ups</b>. Daarnaast heb ik een groot deel van de <b>ontwikkeling</b> van de applicatie op mij genomen, die werd gemaakt met behulp van Laravel en PHP. Ik heb ook geholpen bij het creëren van de <b>database</b>, die werd gemaakt met MySQL. Ten slotte heb ik bijgedragen aan de creatie van de <b>front-end</b> van de applicatie, die werd gemaakt met PHP en gestileerd met behulp van <b>Bootstrap</b>. Momenteel is de repository voor dit project ingesteld als <b>privé</b> en is dus <b>niet toegankelijk</b>.",
       learned:
