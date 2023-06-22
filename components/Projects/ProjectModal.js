@@ -78,21 +78,10 @@ function ProjectModal({ fullProject }) {
       </div>
       {participants && (
         <div className="text-sm font-bold mb-2 text-gray-400">
-          {t("participants")}
+          {t("participants")} {participants}
         </div>
       )}
-      {participants && (
-        <div className="flex flex-wrap items-center">
-          {participants.map((participant) => (
-            <span
-              key={participant}
-              className="text-white text-sm bg-gray-400 px-3 py-1 rounded-md mr-2 mb-2"
-            >
-              {participant}
-            </span>
-          ))}
-        </div>
-      )}
+      {participants && <div className="flex flex-wrap items-center"></div>}
       <h1 className="text-lg font-bold mb-2 text-gray-600">{t("subtitle1")}</h1>
       <p
         className="text-gray-600 mb-3 SearchResult-body"

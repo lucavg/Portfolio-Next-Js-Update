@@ -94,12 +94,12 @@ const userDataEn = {
       title: "Conway's Game of Life",
       favourite: true,
       imgUrl: "/game_of_life_glider.gif",
-      participants: ["Kai Everaerts"],
+      participants: 2,
       category: "Desktop Application",
       tags: ["Java", "JavaFX", "Java Swing", "Java AWT", "Other"],
       githubLink: "https://github.com/lucavg/Game_of_Life",
       project:
-        "In cooperation with Kai Everaerts, a fellow student at <b>Karel de Grote</b> college in Antwerp, I created an application based on <b>Conway's Game of Life</b>. It is fully written using <b>Java</b> and recreates a fully fledged <b>living colony of pixels</b>. The concept of Conway's Game of Life is quite simple. It is a <b>cellular automaton</b>, which means that it consists of a grid of cells that can be either alive or dead. The cells evolve over time, depending on the state of their neighbors. <br/><br/> The <b>rules</b> are as follows: <ol><li>1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li><li>2. Any live cell with two or three live neighbors lives on to the next generation.</li><li>3. Any live cell with more than three live neighbors dies, as if by overpopulation.</li><li>4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li></ol><br/> The goal of the game is to create a colony of cells that can survive for as long as possible. The game is over when all cells are dead. Using the power of Java, we were able to recreate this game in a fully fledged application. A user can paint a grid of cells and start the game to see how the cells evolve over time.",
+        "In cooperation with a fellow student at <b>Karel de Grote</b> college in Antwerp, I created an application based on <b>Conway's Game of Life</b>. It is fully written using <b>Java</b> and recreates a fully fledged <b>living colony of pixels</b>. The concept of Conway's Game of Life is quite simple. It is a <b>cellular automaton</b>, which means that it consists of a grid of cells that can be either alive or dead. The cells evolve over time, depending on the state of their neighbors. <br/><br/> The <b>rules</b> are as follows: <ol><li>1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li><li>2. Any live cell with two or three live neighbors lives on to the next generation.</li><li>3. Any live cell with more than three live neighbors dies, as if by overpopulation.</li><li>4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li></ol><br/> The goal of the game is to create a colony of cells that can survive for as long as possible. The game is over when all cells are dead. Using the power of Java, we were able to recreate this game in a fully fledged application. A user can paint a grid of cells and start the game to see how the cells evolve over time.",
       image: "/projectsProof/game_of_life.png",
       development:
         "During the development of this project, we used Java to create the application. We used <b>JavaFX</b> to create the GUI, <b>Java Swing</b> to create the grid of cells and <b>Java AWT</b> to create the menu bar. Finally, we introduced a <b>load and save</b> functionality which allowed users to save their favorite cell grids as well as load in a variety of <b>preset grids</b> to experiment with. This gave us the final result of a fully fledged application that could simulate Conway's Game of Life.",
@@ -155,12 +155,7 @@ const userDataEn = {
       title: "Project 4.0",
       favourite: false,
       imgUrl: "/projectsProof/elysium.png",
-      participants: [
-        "Senne Van Reusel",
-        "Jentel Liekens",
-        "Mats Claes",
-        "Michael Camerlynck",
-      ],
+      participants: 5,
       category: "Full Stack Development",
       tags: ["Next.js", "Tailwind", "Java", "Spring", "AWS"],
       fileLink: "/projectsProof/Final_Documentation_Project_Elision.pdf",
@@ -176,18 +171,12 @@ const userDataEn = {
       title: "PHP Project",
       favourite: false,
       imgUrl: "/php_project.png",
-      participants: [
-        "Rikko Keuppens",
-        "Matthias Verstappen",
-        "Bram Augenbroe",
-        "Britt De Keyser",
-        "Zion Van Der Weehe",
-      ],
+      participants: 6,
       category: "Full Stack Development",
       tags: ["PHP", "Laravel", "MySQL", "HTML", "CSS"],
       githubLink: "https://github.com/itfactory-tm/2022-ProjectPHP-302",
       project:
-        "A <b>consulting bureau</b> application made with <b>Laravel</b> and <b>PHP</b>, developed in cooperation with Rikko Keuppens, Matthias Verstappen, Bram Augenbroe, Britt De Keyser and Zion Van Der Weehe. This project provided me with a great sense of what it's like to work in group, as well as working with a client.",
+        "A <b>consulting bureau</b> application made with <b>Laravel</b> and <b>PHP</b>, developed in cooperation with 5 of my fellow students. This project provided me with a great sense of what it's like to work in group, as well as working with a client.",
       development:
         "During the development of this project, I was assigned as the <b>SCRUM master</b>, as well as assisting in the development of the application. I was responsible for the <b>planning</b> of the project as well as the <b>daily standups</b>. I also provided a large chunk of the <b>development</b> of the application, which was made using Laravel and PHP. I also assisted in the creation of the <b>database</b>, which was made using MySQL. Finally, I assisted in the creation of the <b>front-end</b> of the application, which was made using PHP and styled using <b>Bootstrap</b>. Currently, the repository for this project is set to <b>private</b> and is thus <b>not accessible</b>.",
       learned:
@@ -197,13 +186,7 @@ const userDataEn = {
       title: "Requirements Analysis",
       favourite: false,
       imgUrl: "/UML.png",
-      participants: [
-        "Miel Goossens",
-        "Jari Van de Vel",
-        "Senne Van Reusel",
-        "Yentl Hendrickx",
-        "Marije Verstrepen",
-      ],
+      participants: 6,
       category: "Other",
       tags: [
         "UML",

@@ -9,6 +9,10 @@ export default function AboutMe() {
   const router = useRouter();
   const data = router.locale === "nl" ? userDataNl : userDataEn;
   const t = useTranslations("AboutMe");
+  const resumeLink =
+    router.locale == "en"
+      ? "/cv_luca_van_genechten_en.pdf"
+      : "/nl/cv_luca_van_genechten_nl.pdf";
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -68,7 +72,7 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 {t("jobDescription1")}{" "}
                 <a
-                  href={data.resumeUrl}
+                  href={resumeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
