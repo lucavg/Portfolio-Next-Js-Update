@@ -13,8 +13,8 @@ const userDataNl = {
       "Mijn favoriete vak in IT is applicatieontwikkeling, meer bepaald met Flutter. Mijn kennis van het IT-spectrum is vrij breed, maar ik leer nog dagelijks bij en ben van plan dat te blijven doen",
       "Mijn hobby's zijn programmeren, Dungeons & Dragons, padel en ik ga ook vaak zwemmen. Ik ben ook een muziekliefhebber en werk momenteel aan een verzameling vinyl.",
     ],
-    currentProject: "Tour de icapps 🚲",
-    currentProjectUrl: "https://flutter-tour-d-icapps.web.app/",
+    currentProject: "VinylVault 💿",
+    currentProjectUrl: "https://angularnetvinyl.azurewebsites.net/",
   },
   experience: [
     {
